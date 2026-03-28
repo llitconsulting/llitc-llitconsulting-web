@@ -1,13 +1,13 @@
 # GitHub
-.git
-.github
+/.git/
+/.github/
 
 # JetBrains
-.idea
+/.idea/
 *.iml
 
 # VS Code
-.vscode
+/.vscode/
 
 # Generated Code
 /bin/
