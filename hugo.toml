@@ -6,7 +6,7 @@ disableKinds = ["taxonomy", "term"]
 [params]
   description = "Lloyd's IT Consulting provides professional technology solutions including IT strategy, infrastructure, cloud services, cybersecurity, and managed IT support."
   email = "info@llitconsulting.com"
-  phone = ""
+  phone = "+1 (479) 301-0561"
   tagline = "Technology Solutions That Drive Results"
 
 [menu]
