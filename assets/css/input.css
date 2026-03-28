@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-brand-gray antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-chakra;
+  }
+}
+
+@layer components {
+  .section-label {
+    @apply font-chakra text-brand-green text-xs uppercase tracking-[0.25em] mb-3 block;
+  }
+
+  .section-heading {
+    @apply font-chakra text-4xl md:text-5xl font-bold text-brand-gray mb-5;
+  }
+
+  .btn-primary {
+    @apply font-chakra inline-block bg-brand-green text-white font-semibold px-8 py-4 uppercase tracking-wider text-sm hover:bg-brand-green-dark transition-colors duration-200;
+  }
+
+  .btn-outline-white {
+    @apply font-chakra inline-block border-2 border-white/50 text-white font-semibold px-8 py-4 uppercase tracking-wider text-sm hover:border-white hover:bg-white/10 transition-all duration-200;
+  }
+
+  .btn-white {
+    @apply font-chakra inline-block bg-white text-brand-green font-semibold px-8 py-4 uppercase tracking-wider text-sm hover:bg-emerald-50 transition-colors duration-200;
+  }
+}

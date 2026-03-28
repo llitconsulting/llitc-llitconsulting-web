@@ -1,0 +1,24 @@
+baseURL = "https://www.llitconsulting.com/"
+languageCode = "en-us"
+title = "LLITC | Lloyd's IT Consulting"
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  description = "Lloyd's IT Consulting provides professional technology solutions including IT strategy, infrastructure, cloud services, cybersecurity, and managed IT support."
+  email = "info@llitconsulting.com"
+  phone = ""
+  tagline = "Technology Solutions That Drive Results"
+
+[menu]
+  [[menu.main]]
+    name = "Services"
+    url = "#services"
+    weight = 1
+  [[menu.main]]
+    name = "About"
+    url = "#about"
+    weight = 2
+  [[menu.main]]
+    name = "Contact"
+    url = "#contact"
+    weight = 3

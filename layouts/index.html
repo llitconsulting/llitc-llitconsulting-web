@@ -1,0 +1,295 @@
+{{ define "main" }}
+
+<!-- ═══════════════════════════════════════════
+     HERO
+     ═══════════════════════════════════════════ -->
+<section id="hero" class="min-h-screen flex items-center justify-center relative bg-brand-green-dark overflow-hidden">
+
+  <!-- Decorative background shapes -->
+  <div class="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+    <div class="absolute top-1/2 right-0 w-[700px] h-[700px] rounded-full border border-white/5 translate-x-1/3 -translate-y-1/2"></div>
+    <div class="absolute top-1/2 right-0 w-[500px] h-[500px] rounded-full border border-white/5 translate-x-1/3 -translate-y-1/2"></div>
+    <div class="absolute top-1/2 right-0 w-[300px] h-[300px] rounded-full border border-white/5 translate-x-1/3 -translate-y-1/2"></div>
+    <div class="absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full border border-white/5 -translate-x-1/3 translate-y-1/3"></div>
+    <div class="absolute top-0 left-1/2 w-px h-full bg-gradient-to-b from-transparent via-white/5 to-transparent"></div>
+    <div class="absolute top-0 left-1/3 w-px h-2/3 bg-gradient-to-b from-transparent via-white/4 to-transparent"></div>
+  </div>
+
+  <div class="relative z-10 text-center px-6 max-w-5xl mx-auto pt-20 pb-16">
+    <!-- White horizontal logo -->
+    <div class="mb-10">
+      <img src="/images/logo-white.png" alt="LLITC - Lloyd's IT Consulting" class="h-16 md:h-20 mx-auto">
+    </div>
+
+    <!-- Label -->
+    <div class="inline-flex items-center gap-3 mb-7">
+      <span class="block w-8 h-px bg-white/30"></span>
+      <span class="font-chakra text-white/50 text-xs uppercase tracking-[0.3em]">Lloyd's IT Consulting</span>
+      <span class="block w-8 h-px bg-white/30"></span>
+    </div>
+
+    <!-- Headline -->
+    <h1 class="font-chakra text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-[1.05] tracking-tight">
+      Technology Solutions<br>
+      <span class="text-emerald-400">That Drive Results</span>
+    </h1>
+
+    <!-- Subheadline -->
+    <p class="text-lg md:text-xl text-white/60 mb-10 max-w-2xl mx-auto leading-relaxed">
+      Professional IT consulting tailored to your business. From infrastructure and cloud to cybersecurity and strategic planning — we deliver technology that works.
+    </p>
+
+    <!-- CTAs -->
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="#services" class="btn-white">Our Services</a>
+      <a href="#contact" class="btn-outline-white">Get in Touch</a>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/30">
+    <span class="font-chakra text-xs uppercase tracking-widest">Scroll</span>
+    <svg class="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+    </svg>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     SERVICES
+     ═══════════════════════════════════════════ -->
+<section id="services" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Section header -->
+    <div class="text-center mb-16">
+      <span class="section-label">What We Offer</span>
+      <h2 class="section-heading">Our Services</h2>
+      <p class="text-lg text-brand-gray-light max-w-2xl mx-auto leading-relaxed">
+        Comprehensive technology solutions designed to optimize your operations, protect your data, and accelerate growth.
+      </p>
+    </div>
+
+    <!-- Service cards grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- IT Strategy & Consulting -->
+      <div class="group p-8 border border-gray-100 hover:border-brand-green hover:shadow-lg transition-all duration-300 bg-white flex flex-col">
+        <div class="w-12 h-12 bg-brand-green/10 flex items-center justify-center mb-6 group-hover:bg-brand-green transition-colors duration-300 shrink-0">
+          <svg class="w-6 h-6 text-brand-green group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.75">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+          </svg>
+        </div>
+        <h3 class="font-chakra text-lg font-semibold text-brand-gray mb-3">IT Strategy &amp; Consulting</h3>
+        <p class="text-brand-gray-light leading-relaxed text-sm flex-1">
+          Align your technology investments with your business objectives. We develop actionable IT roadmaps that support sustainable growth and measurable outcomes.
+        </p>
+      </div>
+
+      <!-- Network Infrastructure -->
+      <div class="group p-8 border border-gray-100 hover:border-brand-green hover:shadow-lg transition-all duration-300 bg-white flex flex-col">
+        <div class="w-12 h-12 bg-brand-green/10 flex items-center justify-center mb-6 group-hover:bg-brand-green transition-colors duration-300 shrink-0">
+          <svg class="w-6 h-6 text-brand-green group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.75">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 12H3m0 0l4-4m-4 4l4 4M19 12h2m0 0l-4-4m4 4l-4 4M12 5V3m0 0L8 7m4-4l4 4M12 19v2m0 0l-4-4m4 4l4-4"/>
+            <rect x="9" y="9" width="6" height="6" rx="1" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="font-chakra text-lg font-semibold text-brand-gray mb-3">Network Infrastructure</h3>
+        <p class="text-brand-gray-light leading-relaxed text-sm flex-1">
+          Design, deploy, and maintain reliable, high-performance networks. From LAN/WAN architecture to wireless solutions built for your environment.
+        </p>
+      </div>
+
+      <!-- Cloud Solutions -->
+      <div class="group p-8 border border-gray-100 hover:border-brand-green hover:shadow-lg transition-all duration-300 bg-white flex flex-col">
+        <div class="w-12 h-12 bg-brand-green/10 flex items-center justify-center mb-6 group-hover:bg-brand-green transition-colors duration-300 shrink-0">
+          <svg class="w-6 h-6 text-brand-green group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.75">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
+          </svg>
+        </div>
+        <h3 class="font-chakra text-lg font-semibold text-brand-gray mb-3">Cloud Solutions</h3>
+        <p class="text-brand-gray-light leading-relaxed text-sm flex-1">
+          Migrate, optimize, and manage cloud environments across AWS, Azure, and Google Cloud. Reduce costs and improve scalability with expert cloud guidance.
+        </p>
+      </div>
+
+      <!-- Cybersecurity -->
+      <div class="group p-8 border border-gray-100 hover:border-brand-green hover:shadow-lg transition-all duration-300 bg-white flex flex-col">
+        <div class="w-12 h-12 bg-brand-green/10 flex items-center justify-center mb-6 group-hover:bg-brand-green transition-colors duration-300 shrink-0">
+          <svg class="w-6 h-6 text-brand-green group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.75">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+          </svg>
+        </div>
+        <h3 class="font-chakra text-lg font-semibold text-brand-gray mb-3">Cybersecurity</h3>
+        <p class="text-brand-gray-light leading-relaxed text-sm flex-1">
+          Protect your business from evolving threats. Security assessments, policy development, endpoint protection, and compliance guidance tailored to your risk profile.
+        </p>
+      </div>
+
+      <!-- Managed IT Services -->
+      <div class="group p-8 border border-gray-100 hover:border-brand-green hover:shadow-lg transition-all duration-300 bg-white flex flex-col">
+        <div class="w-12 h-12 bg-brand-green/10 flex items-center justify-center mb-6 group-hover:bg-brand-green transition-colors duration-300 shrink-0">
+          <svg class="w-6 h-6 text-brand-green group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.75">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+          </svg>
+        </div>
+        <h3 class="font-chakra text-lg font-semibold text-brand-gray mb-3">Managed IT Services</h3>
+        <p class="text-brand-gray-light leading-relaxed text-sm flex-1">
+          Ongoing monitoring, maintenance, and support for your IT environment. Proactive management that keeps your systems running so you can focus on your business.
+        </p>
+      </div>
+
+      <!-- Digital Transformation -->
+      <div class="group p-8 border border-gray-100 hover:border-brand-green hover:shadow-lg transition-all duration-300 bg-white flex flex-col">
+        <div class="w-12 h-12 bg-brand-green/10 flex items-center justify-center mb-6 group-hover:bg-brand-green transition-colors duration-300 shrink-0">
+          <svg class="w-6 h-6 text-brand-green group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.75">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+          </svg>
+        </div>
+        <h3 class="font-chakra text-lg font-semibold text-brand-gray mb-3">Digital Transformation</h3>
+        <p class="text-brand-gray-light leading-relaxed text-sm flex-1">
+          Modernize legacy systems and processes to stay competitive. We guide you through technology adoption that creates real efficiency and business value.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     ABOUT
+     ═══════════════════════════════════════════ -->
+<section id="about" class="py-24 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+      <!-- Left: Text -->
+      <div>
+        <span class="section-label">About LLITC</span>
+        <h2 class="font-chakra text-4xl md:text-5xl font-bold text-brand-gray mb-6 leading-tight">
+          Your Trusted<br>Technology Partner
+        </h2>
+        <p class="text-brand-gray-light text-lg leading-relaxed mb-5">
+          Lloyd's IT Consulting was founded with a simple mission: to provide businesses with expert technology guidance they can trust. We combine deep technical expertise with a commitment to understanding your unique business needs.
+        </p>
+        <p class="text-brand-gray-light text-lg leading-relaxed mb-8">
+          Whether you're a small business looking to modernize your infrastructure or an established company navigating digital transformation, LLITC delivers practical, scalable solutions aligned with your goals — not unnecessary complexity.
+        </p>
+        <a href="#contact" class="btn-primary">Work With Us</a>
+      </div>
+
+      <!-- Right: Value prop tiles -->
+      <div class="grid grid-cols-2 gap-4">
+        <div class="bg-white p-7 border-t-4 border-brand-green">
+          <div class="font-chakra text-3xl font-bold text-brand-green mb-2">Expert</div>
+          <div class="font-chakra text-brand-gray-light text-xs uppercase tracking-wider leading-relaxed">Deep Technical<br>Expertise</div>
+        </div>
+        <div class="bg-white p-7 border-t-4 border-brand-gray">
+          <div class="font-chakra text-3xl font-bold text-brand-gray mb-2">Tailored</div>
+          <div class="font-chakra text-brand-gray-light text-xs uppercase tracking-wider leading-relaxed">Solutions Built<br>For Your Needs</div>
+        </div>
+        <div class="bg-white p-7 border-t-4 border-brand-gray">
+          <div class="font-chakra text-3xl font-bold text-brand-gray mb-2">Reliable</div>
+          <div class="font-chakra text-brand-gray-light text-xs uppercase tracking-wider leading-relaxed">Support You<br>Can Count On</div>
+        </div>
+        <div class="bg-brand-green p-7">
+          <div class="font-chakra text-3xl font-bold text-white mb-2">Results</div>
+          <div class="font-chakra text-white/60 text-xs uppercase tracking-wider leading-relaxed">Technology That<br>Works For You</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     WHY LLITC (Value Props)
+     ═══════════════════════════════════════════ -->
+<section class="py-20 bg-white border-t border-gray-100">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+
+      <div class="flex flex-col items-center">
+        <div class="w-14 h-14 bg-brand-green/10 flex items-center justify-center mb-5">
+          <svg class="w-7 h-7 text-brand-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.75">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+          </svg>
+        </div>
+        <h3 class="font-chakra text-lg font-semibold text-brand-gray mb-3">Business-First Approach</h3>
+        <p class="text-brand-gray-light text-sm leading-relaxed max-w-xs">
+          We start with your business goals, not the technology. Every recommendation is grounded in what actually moves your business forward.
+        </p>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <div class="w-14 h-14 bg-brand-green/10 flex items-center justify-center mb-5">
+          <svg class="w-7 h-7 text-brand-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.75">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+          </svg>
+        </div>
+        <h3 class="font-chakra text-lg font-semibold text-brand-gray mb-3">Fast &amp; Responsive</h3>
+        <p class="text-brand-gray-light text-sm leading-relaxed max-w-xs">
+          Technology issues don't keep business hours. We deliver prompt, responsive support and keep you informed every step of the way.
+        </p>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <div class="w-14 h-14 bg-brand-green/10 flex items-center justify-center mb-5">
+          <svg class="w-7 h-7 text-brand-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.75">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+          </svg>
+        </div>
+        <h3 class="font-chakra text-lg font-semibold text-brand-gray mb-3">Proven &amp; Trusted</h3>
+        <p class="text-brand-gray-light text-sm leading-relaxed max-w-xs">
+          Practical solutions backed by hands-on enterprise experience. We deliver what we promise, on time and within budget.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     CONTACT CTA
+     ═══════════════════════════════════════════ -->
+<section id="contact" class="py-24 bg-brand-green relative overflow-hidden">
+
+  <!-- Background decoration -->
+  <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+    <div class="absolute top-1/2 left-0 w-[600px] h-[600px] rounded-full border border-white/5 -translate-x-1/2 -translate-y-1/2"></div>
+    <div class="absolute top-1/2 right-0 w-[400px] h-[400px] rounded-full border border-white/5 translate-x-1/3 -translate-y-1/2"></div>
+  </div>
+
+  <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+    <span class="font-chakra text-white/40 text-xs uppercase tracking-[0.3em] mb-4 block">Get Started</span>
+    <h2 class="font-chakra text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+      Ready to Transform<br>Your Technology?
+    </h2>
+    <p class="text-xl text-white/60 mb-10 max-w-2xl mx-auto leading-relaxed">
+      Let's discuss how LLITC can help you achieve your technology goals. Reach out today to schedule a free consultation.
+    </p>
+
+    <!-- Contact info -->
+    <div class="flex flex-col sm:flex-row gap-6 justify-center items-center mb-10">
+      <a href="mailto:{{ .Site.Params.email }}" class="flex items-center gap-3 text-white/70 hover:text-white transition-colors text-base group">
+        <div class="w-9 h-9 bg-white/10 flex items-center justify-center group-hover:bg-white/20 transition-colors">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.75">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+          </svg>
+        </div>
+        <span class="font-chakra text-sm tracking-wide">{{ .Site.Params.email }}</span>
+      </a>
+    </div>
+
+    <a href="mailto:{{ .Site.Params.email }}" class="btn-white text-base px-10 py-5">
+      Schedule a Free Consultation
+    </a>
+  </div>
+</section>
+
+{{ end }}

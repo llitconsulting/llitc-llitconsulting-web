@@ -1,0 +1,31 @@
+<footer class="bg-brand-gray py-12">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-8">
+
+      <!-- Logo + tagline -->
+      <div class="text-center md:text-left">
+        <img src="/images/logo-white.png" alt="LLITC" class="h-9 mb-2 mx-auto md:mx-0">
+        <p class="text-white/40 text-xs font-chakra uppercase tracking-wider">Lloyd's IT Consulting</p>
+      </div>
+
+      <!-- Nav links -->
+      <nav class="flex flex-wrap gap-6 justify-center">
+        {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}" class="font-chakra text-white/50 hover:text-white/80 text-xs uppercase tracking-[0.2em] transition-colors">{{ .Name }}</a>
+        {{ end }}
+      </nav>
+
+      <!-- Contact -->
+      <div class="text-center md:text-right">
+        <a href="mailto:{{ .Site.Params.email }}" class="text-white/50 hover:text-white/80 text-sm transition-colors">
+          {{ .Site.Params.email }}
+        </a>
+        <p class="text-white/30 text-xs mt-1 font-chakra">www.llitconsulting.com</p>
+      </div>
+    </div>
+
+    <div class="border-t border-white/10 pt-6 text-center">
+      <p class="text-white/30 text-xs font-chakra">&copy; {{ now.Year }} Lloyd's IT Consulting. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
