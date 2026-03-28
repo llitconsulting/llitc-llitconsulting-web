@@ -9,6 +9,10 @@
 # VS Code
 .vscode
 
+# Generated Code
+/bin/
+/public/
+
 # Firebase build and deployment files
 /firebase-debug.log
 /firebase-debug.*.log
