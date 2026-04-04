@@ -9,7 +9,8 @@
 # VS Code
 /.vscode/
 
-# Generated Code
+# Hugo and Generated Code
+/.hugo_build.lock
 /bin/
 /public/
 
